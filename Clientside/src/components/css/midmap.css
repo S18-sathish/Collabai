@@ -1,0 +1,16 @@
+.mindmap { height: 100%; display: flex; flex-direction: column; }
+.mindmap-toolbar { display: flex; gap: 8px; padding: 8px; border-bottom: 1px solid #eee; }
+.mindmap-canvas { position: relative; flex: 1; background: #fafafa; overflow: hidden; }
+.mindmap-node {
+  position: absolute;
+  min-width: 120px;
+  min-height: 40px;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,.05);
+  cursor: move;
+  user-select: none;
+  outline: none;
+}
