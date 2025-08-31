@@ -10,6 +10,7 @@ import KanbanBoard from './components/pages/Kanbanboard';
 import DocumentEditor from './components/pages/Documenteditor';
 import DocumentList from './components/pages/Documentlist';
 import Board from './components/pages/Board';
+import Realtimechat from './components/pages/Realtimechat';
 import Mindmapboard from './components/pages/Midmapboard';
 import { ThemeProvider } from './components/theme/Themecontext';   // ✅ use ThemeProvider
 
@@ -26,6 +27,7 @@ const App = () => {
           <Route path="/aichat" element={<AIChat />} />
           <Route path="/kanban" element={<KanbanBoard />} />
           <Route path="/doc" element={<DocumentList />} />
+          <Route path="/realtimechat" element={<Realtimechat />} />
           <Route path="/editor" element={<DocumentEditor />} />
           <Route path="/editor/:id" element={<DocumentEditor />} />
           <Route path="/board" element={<Board/>} />

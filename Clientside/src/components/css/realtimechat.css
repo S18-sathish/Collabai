@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set a comfortable font and background */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f7f8fa;
+  color: #222;
+  min-height: 100vh;
+}
+
+/* Make sure links look good */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Make forms and buttons inherit font */
+input, button, textarea, select {
+  font: inherit;
+}
+

@@ -37,7 +37,7 @@ const Dashboard = () => {
       link: "#",
       icon: "💬",
       iconBg: "lightpink",
-      path:"/chat"
+      path:"/realtimechat"
     },
     {
       title: "Document Editor",

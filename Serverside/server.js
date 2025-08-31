@@ -5,6 +5,7 @@ import path from "path";
 import http from "http";
 import connectDB from "./config/connection.js";
 
+
 import authRoutes from "./routes/authRoutes.js";
 import userRoutes from "./routes/userRoutes.js";
 import todoRoutes from "./routes/todoRoutes.js";
@@ -21,6 +22,7 @@ const app = express();
 
 app.use(cors({
   origin: "http://localhost:5173",
+  methods: ["GET", "POST"],
   credentials: true,
 }));
 
@@ -39,6 +41,9 @@ app.use("/api/groups", boardRoutes);
 app.use("/api/boards", boardRoutes);
 
 const server = http.createServer(app);
+
+
+
 
 // ✅ Initialize Socket.IO in a separate file
 initSocket(server);
